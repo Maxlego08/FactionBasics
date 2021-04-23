@@ -1,0 +1,24 @@
+main: fr.firepro.factionbasics.FactionBasics
+name: FactionBasics_FactionsUUID
+version: 1.0
+depend:
+  - WorldGuard
+  - WorldEdit
+  - Factions
+commands:
+  discord:
+  hoteldesventes:
+    aliases: hdv
+  poubelle:
+    aliases:
+      - trash
+  site:
+  vote:
+  dynamite:
+    permission: factionbasics.give
+  bottle:
+    aliases:
+      - bottlexp
+      - xpbottle
+  maintenance:
+    permission: factionbasics.maintenance

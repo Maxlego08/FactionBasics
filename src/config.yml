@@ -1,0 +1,85 @@
+command:
+  discord: "&8[&6Kinosia&e&8] &6Discord &8- &ehttps://discord.gg/jKs4Y2H34h"
+  vote: "&eTu peux voter sur notre  site : &l&fhttps://kinosia.fr/vote"
+  site: "&eVoici notre site : &a&lhttps://kinosia.fr"
+dropmodifier: #remove items drops
+  mobs:
+    - "SKELETON"
+    - "PIG_ZOMBIE"
+    - "IRON_GOLEM"
+  PIG_ZOMBIE:
+    - "GOLD_SWORD"
+  SKELETON:
+    - "BOW"
+  IRON_GOLEM:
+    - "RED_ROSE"
+BLOCKS_LIMIT:
+  PISTON: 16
+  HOPPER: 16
+  CRAFTING_TABLE: 16
+  FURNACE: 16
+  DROPPER: 16
+  DISPENSER: 16
+
+cooldownPearl: #permission : factionbasics.cooldown.bypass
+  region:
+    - "warzone"
+    - "global"
+  time:
+    - -1 #-1 = pearls prohibited
+    - 6 #line 1 of time = line 1 of region (Example: nature = 6s of cooldown, warzone = forbidden pearls)
+  message: '&eCooldown pearl - %cooldown% secondes !'
+  impossible : '&eTu ne peux pas pearl depuis la %region%'
+
+poubelle: #trash
+  enable: true
+  nom:
+    trashname: "&cPoubelle"
+  messages:
+    error: "&cUtilise: /poubelle"
+    error_only_player: "&6Seuls les joueurs peuvent utiliser cette commande."
+
+banned-command:
+  - "/sk"
+  - "/skript"
+  - "/pl"
+  - "/plugins"
+  - "/bukkit:pl"
+  - "/bukkit:plugins"
+  - "/bukkit:?"
+  - "/?"
+  - "/minecraft:me"
+  - "/essentials:me"
+  - "/minecraft:gamemode"
+  - "/minecraft:gm"
+  - "/minecraft:op"
+  - "/me"
+  - "/eme"
+  - "/ver"
+  - "/version"
+  - "/nuke"
+  - "/world"
+  - "/essentials:world"
+
+dynamites: true #permission : factionbasics.give
+dynamite:
+  giveur: "&8[&6Kinosia&e&8] &eVous avez give &dx{nombre} &6dynamite &eà &b{player}&e."
+  receveur: "&8[&6Kinosia&e&8] &eVous avez reçu &dx{nombre} &6dynamite&e."
+  name: "&bDynamite"
+  lore: "&4 @&eClique droit avec cette &6dynamite@&epour envoyer une &6TNT&e.@&4 " # '@' = saut de ligne
+
+maintenance: #permission join : factionbasics.maintenance.bypass | permission command : factionbasics.maintenance
+  kick-message: "&8[&6Kinosia&8] &eMaintenance en cours"
+  enable-message: "&8[&6Kinosia&8] &eMaintenance &aactivée"
+  disable-message: "&8[&6Kinosia&8] &eMaintenance &4désactivée"
+  on: false
+
+bottlexp:
+  minimum-level: 1
+  maximum-level: 500
+  transform-message: "&8[&6Kinosia&8] &eVous venez de transformer &6{level} &elevels en bouteille"
+  number-error: "&8[&6Kinosia&8] &eVous devez préciser un nombre entier"
+  no-enough-xp: "&8[&6Kinosia&8] &eVous n'avez pas assez d'EXP"
+  minimum-level-message: "&8[&6Kinosia&8] &eIl vous faut au minimum {minimum-level} level pour créer une bottlexp"
+  receive-message: "&8[&6Kinosia&8] &eVous venez de recevoir &6{level} &elevels"
+  maximum-level-message: "&8[&6Kinosia&8] &eVous avez dépassé la limite ({maximum-level})"

@@ -1,0 +1,3 @@
+BLOCKS_LIMIT:
+  LIMIT_REACHED: "limit of <material> is of <amount> by chunk !"
+SPAM_MESSAGE: "&c Please Wait &b2 &cSeconds Before Writing Again." #permission : antispam.bypass
